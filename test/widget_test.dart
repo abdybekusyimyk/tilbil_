@@ -10,10 +10,10 @@
 // import 'package:tilbil/main.dart';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tilbil/main.dart';
+import 'package:tilbil/app/view/app_view.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Tilbil', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
   });

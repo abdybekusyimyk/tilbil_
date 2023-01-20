@@ -1,0 +1,1 @@
+///    эскертүүлөр   ailanyp turucchuu 

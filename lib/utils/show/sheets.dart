@@ -1,0 +1,1 @@
+// barakchalar jazylysh kerek
