@@ -104,6 +104,8 @@ class $AssetsImagesGen {
   /// File path: assets/images/bulut.png
   AssetGenImage get bulut => const AssetGenImage('assets/images/bulut.png');
 
+  AssetGenImage get buluton => const AssetGenImage('assets/images/buluton.png');
+
   /// File path: assets/images/janylmachtar.png
   AssetGenImage get janylmachtar =>
       const AssetGenImage('assets/images/janylmachtar.png');
@@ -156,6 +158,7 @@ class $AssetsImagesGen {
         balaKitep,
         baldar,
         bulut,
+        buluton,
         janylmachtar,
         jomok22,
         jomoktor,
