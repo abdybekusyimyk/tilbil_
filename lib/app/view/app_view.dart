@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:tilbil/modules/authentication/view/go_regis_view.dart';
-import 'package:tilbil/modules/authentication/view/go_two_view.dart';
 import 'package:tilbil/modules/home/view/home_view.dart';
 
 class MyApp extends StatelessWidget {
