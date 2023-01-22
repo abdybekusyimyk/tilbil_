@@ -152,6 +152,28 @@ class $AssetsImagesGen {
   AssetGenImage get yrlarDetail =>
       const AssetGenImage('assets/images/yrlar_detail.png');
 
+  ///catagori  LISTKE koshulbady
+  AssetGenImage get tylky => const AssetGenImage('assets/images/tylky.png');
+
+  AssetGenImage get sandar => const AssetGenImage('assets/images/sandar.png');
+
+  AssetGenImage get momojemish =>
+      const AssetGenImage('assets/images/momojemish.png');
+
+  AssetGenImage get ltamga => const AssetGenImage('assets/images/ltamga.png');
+
+  AssetGenImage get kozu => const AssetGenImage('assets/images/kozu.png');
+
+  AssetGenImage get kamaz => const AssetGenImage('assets/images/kamaz.png');
+
+  AssetGenImage get jerjemish =>
+      const AssetGenImage('assets/images/jerjemish.png');
+
+  AssetGenImage get famale => const AssetGenImage('assets/images/famale.png');
+
+  AssetGenImage get denemuch =>
+      const AssetGenImage('assets/images/denemuch.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
         akylduuBala,

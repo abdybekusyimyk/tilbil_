@@ -30,4 +30,7 @@ class AppTextStyles {
 
   static const TextStyle homeAnimaStyle = TextStyle(
       color: AppColors.blueblack, fontSize: 20, fontFamily: 'CormorantInfant');
+
+  static const TextStyle detailcartStyle = TextStyle(
+      fontSize: 14, fontFamily: 'CormorantInfant', color: AppColors.blueblack);
 }

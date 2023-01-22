@@ -5,6 +5,7 @@ class AppSpace {
 
   /// Spaces Height
   static const sized5 = SizedBox(height: 5);
+  static const sized10 = SizedBox(height: 10);
   static const sized15 = SizedBox(height: 15);
   static const sized20 = SizedBox(height: 20);
   static const sized23 = SizedBox(height: 23);
