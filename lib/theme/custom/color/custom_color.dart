@@ -20,4 +20,5 @@ class AppColors {
   static const Color green = Color(0xff68C052);
   static const Color picker = Color(0xff9747FF);
   static const Color white = Color(0xffffffff);
+  static const Color sargich = Color(0xffFFB703);
 }
