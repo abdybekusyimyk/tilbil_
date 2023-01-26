@@ -1,9 +1,16 @@
 class AppText {
   AppText._init();
 
+  static const String twoviewtext =
+      'Кыргыз балдар адабияты аркылуу балаңызга кыргызча үйрөтүңүз';
+  static const String singup = 'Катталуу';
+  static const String inputname = 'Балаңыздын атын жазыңыз';
   static const String welcomeTextName = 'Салам, Айнура';
-  static const String containerText =
-      'Балаңыздын кыргыз тили биз менен байысын';
+  static const String welcome = 'К о ш   к е л и ң и з !';
+
+  static const String weabout = 'Биз жөнүндө';
+  static const String share = 'Бөлүшүү';
+  static const String homeAnimat = 'Балаңыздын кыргыз тили биз менен байысын ';
   static const String containerMenu1 = 'Жомоктор';
   static const String containerMenu2 = 'Жаңылмачтар';
   static const String containerMenu3 = 'Ырлар';
@@ -38,4 +45,26 @@ class AppText {
   static const String yibulo = 'Үй бүлө';
   static const String jerjemishter = 'Жер жемиштер';
   static const String momojemishter = 'Мөмө жемиштер';
+  static const String jomokto = 'Жомоктор';
+
+  static const String weaboutview = '''
+”Тил бил - мен кыргызча сүйлөйм” долбоорунун 
+эң башкы максаты кыргыз тилин жайылтуу
+болуп саналат. Тиркеменин жардамы менен уул 
+кыздарыңызды кыргыз адабияты менен 
+тааныштырып, кызыгуусун арттыра аласыз. 
+Кыргыз тилинде жомоктор, аудио жомоктор, 
+ырлар өзүңүзгө жана балдарыңызга жеткиликтүү жана ыңгайлуу болот. 
+
+Урматтуу ата-энелер тиркеме сиздерге жана
+кичинекей балдарга чоң жардамын тийгизет 
+деген үмүттөбүз! 
+
+Тиркеме боюнча сын пикирирлерге, колдооңуздарга
+ар дайым ачыкпыз!
+
+Байланыш: 
+
+тел.: +996702555744
+''';
 }

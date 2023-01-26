@@ -66,6 +66,15 @@ class $AssetsIconsGen {
   /// File path: assets/icons/stop_italic.svg
   SvgGenImage get stopItalic => SvgGenImage('assets/icons/stop_italic.svg');
 
+  ////catefori detail tuzulgon listke koshulgan jok
+  SvgGenImage get play => SvgGenImage('assets/icons/play.svg');
+
+  SvgGenImage get left => SvgGenImage('assets/icons/left.svg');
+
+  SvgGenImage get right => SvgGenImage('assets/icons/right.svg');
+
+  SvgGenImage get proficon => SvgGenImage('assets/icons/proficon.svg');
+
   /// List of all assets
   List<SvgGenImage> get values => [
         aboutUs,
@@ -103,6 +112,8 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/bulut.png
   AssetGenImage get bulut => const AssetGenImage('assets/images/bulut.png');
+
+  AssetGenImage get buluton => const AssetGenImage('assets/images/buluton.png');
 
   /// File path: assets/images/janylmachtar.png
   AssetGenImage get janylmachtar =>
@@ -150,12 +161,42 @@ class $AssetsImagesGen {
   AssetGenImage get yrlarDetail =>
       const AssetGenImage('assets/images/yrlar_detail.png');
 
+  ///catagori  LISTKE koshulbady
+  AssetGenImage get tylky => const AssetGenImage('assets/images/tylky.png');
+
+  AssetGenImage get sandar => const AssetGenImage('assets/images/sandar.png');
+
+  AssetGenImage get momojemish =>
+      const AssetGenImage('assets/images/momojemish.png');
+
+  AssetGenImage get ltamga => const AssetGenImage('assets/images/ltamga.png');
+
+  AssetGenImage get kozu => const AssetGenImage('assets/images/kozu.png');
+
+  AssetGenImage get kamaz => const AssetGenImage('assets/images/kamaz.png');
+
+  AssetGenImage get jerjemish =>
+      const AssetGenImage('assets/images/jerjemish.png');
+
+  AssetGenImage get famale => const AssetGenImage('assets/images/famale.png');
+
+  AssetGenImage get denemuch =>
+      const AssetGenImage('assets/images/denemuch.png');
+
+  AssetGenImage get m => const AssetGenImage('assets/images/m.png');
+
+  AssetGenImage get janyldetail =>
+      const AssetGenImage('assets/images/janyldetail.png');
+
+  AssetGenImage get tabysh => const AssetGenImage('assets/images/tabysh.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
         akylduuBala,
         balaKitep,
         baldar,
         bulut,
+        buluton,
         janylmachtar,
         jomok22,
         jomoktor,
