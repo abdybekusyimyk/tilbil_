@@ -2,80 +2,69 @@ import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
+import 'package:tilbil/theme/custom/text/text.dart';
+import 'package:tilbil/theme/custom/typography/typography.dart';
 
 class FairyTalesView extends StatelessWidget {
   const FairyTalesView({Key? key}) : super(key: key);
 
-//  int _selectedIndex = 0;
-
-//   void _onItemTapped(int index) {
-//     setState(() {
-//       _selectedIndex = index;
-//     });
-//   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.white,
-      appBar: AppBar(
-        leading: Assets.icons.back.svg(fit: BoxFit.none),
-        backgroundColor: AppColors.white,
-        elevation: 0,
-      ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            AppSpace.sized15,
-            Assets.images.jomok22.image(),
-            AppSpace.sized20,
-            const Text(
-              'Жомоктор',
-              style: TextStyle(
-                  fontSize: 36,
-                  color: AppColors.blueblack,
-                  fontFamily: 'CormorantInfant'),
-            ),
-            AppSpace.sized20,
-            ListView.builder(
-              physics: const ScrollPhysics(),
-              shrinkWrap: true,
-              itemCount: appTextJomoktor.length,
-              prototypeItem: ListTile(
-                title: Text(appTextJomoktor.first),
+        child: SafeArea(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 15, right: 330, bottom: 10),
+                child: Assets.icons.back.svg(fit: BoxFit.none),
               ),
-              itemBuilder: (BuildContext context, index) {
-                return ListTile(
-                  title: GestureDetector(
-                    onDoubleTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const Ghj(),
-                      //   ),
-                      // );
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 25),
-                      child: Text(
-                        appTextJomoktor[index],
-                        style: const TextStyle(
-                            fontSize: 20,
-                            color: AppColors.blueblack,
-                            fontFamily: 'CormorantInfant'),
+              Assets.images.jomok22.image(),
+              AppSpace.sized20,
+              const Text(
+                AppText.jomokto,
+                style: AppTextStyles.firetyles34Style,
+              ),
+              AppSpace.sized20,
+              ListView.builder(
+                physics: const ScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: appTextJomoktor.length,
+                prototypeItem: ListTile(
+                  title: Text(appTextJomoktor.first),
+                ),
+                itemBuilder: (BuildContext context, index) {
+                  return ListTile(
+                    title: GestureDetector(
+                      onDoubleTap: () {
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (context) => const Ghj(),
+                        //   ),
+                        // );
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: Text(
+                          appTextJomoktor[index],
+                          style: AppTextStyles.firetelyStyle,
+                        ),
                       ),
                     ),
-                  ),
-                  subtitle: const Divider(
-                    thickness: 1.2,
-                    indent: 25,
-                    endIndent: 25,
-                    color: AppColors.blueblack,
-                    height: 20,
-                  ),
-                );
-              },
-            ),
-          ],
+                    subtitle: const Divider(
+                      thickness: 1.2,
+                      indent: 20,
+                      endIndent: 20,
+                      color: AppColors.blueblack,
+                      height: 20,
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );

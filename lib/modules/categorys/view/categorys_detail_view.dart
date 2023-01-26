@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
+import 'package:tilbil/modules/categorys/widgets/categorys_detail_gridview.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
 
 class CategorysDetailView extends StatelessWidget {
@@ -15,14 +16,14 @@ class CategorysDetailView extends StatelessWidget {
           child: Column(
             children: [
               AppSpace.sized40,
-              Text(
+              const Text(
                 'Үй жаныбарлары',
                 style: TextStyle(
                     fontSize: 36,
                     fontFamily: 'Gabriela',
                     color: AppColors.sargich),
               ),
-              AppSpace.sized50,
+              AppSpace.sized40,
               Container(
                 decoration: const BoxDecoration(
                   color: AppColors.white,
@@ -31,21 +32,29 @@ class CategorysDetailView extends StatelessWidget {
                     topLeft: Radius.circular(55),
                   ),
                 ),
-                child: ListView.builder(
-                    physics: const ScrollPhysics(),
-                    shrinkWrap: true,
-                    itemCount: 20,
-                    prototypeItem: ListTile(
-                      title: Text("appText.first"),
-                    ),
-                    itemBuilder: (BuildContext context, index) {
-                      // return GridView.builder();
-                      return Text("data");
-                    }),
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+                  child: CategorysDetailGridview(),
+                ),
               )
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        unselectedItemColor: Colors.red,
+        // backgroundColor: Colors.red,
+        selectedItemColor: Colors.red,
+        // fixedColor: Colors.red,
+        currentIndex: 0,
+        iconSize: 20.0,
+        items: const [
+          BottomNavigationBarItem(
+              label: 'ddd', icon: Icon(Icons.accessibility)),
+          BottomNavigationBarItem(label: 'sss', icon: Icon(Icons.account_box)),
+          BottomNavigationBarItem(label: 'ttt', icon: Icon(Icons.adb)),
+          BottomNavigationBarItem(label: 'rrr', icon: Icon(Icons.menu))
+        ],
       ),
     );
   }

@@ -33,4 +33,10 @@ class AppTextStyles {
 
   static const TextStyle detailcartStyle = TextStyle(
       fontSize: 14, fontFamily: 'CormorantInfant', color: AppColors.blueblack);
+
+  static const TextStyle firetelyStyle = TextStyle(
+      fontSize: 20, color: AppColors.blueblack, fontFamily: 'CormorantInfant');
+
+  static const TextStyle firetyles34Style = TextStyle(
+      fontSize: 36, color: AppColors.blueblack, fontFamily: 'CormorantInfant');
 }

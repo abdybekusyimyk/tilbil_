@@ -45,6 +45,7 @@ class AppText {
   static const String yibulo = 'Үй бүлө';
   static const String jerjemishter = 'Жер жемиштер';
   static const String momojemishter = 'Мөмө жемиштер';
+  static const String jomokto = 'Жомоктор';
 
   static const String weaboutview = '''
 ”Тил бил - мен кыргызча сүйлөйм” долбоорунун 

@@ -66,6 +66,15 @@ class $AssetsIconsGen {
   /// File path: assets/icons/stop_italic.svg
   SvgGenImage get stopItalic => SvgGenImage('assets/icons/stop_italic.svg');
 
+  ////catefori detail tuzulgon listke koshulgan jok
+  SvgGenImage get play => SvgGenImage('assets/icons/play.svg');
+
+  SvgGenImage get left => SvgGenImage('assets/icons/left.svg');
+
+  SvgGenImage get right => SvgGenImage('assets/icons/right.svg');
+
+  SvgGenImage get proficon => SvgGenImage('assets/icons/proficon.svg');
+
   /// List of all assets
   List<SvgGenImage> get values => [
         aboutUs,
@@ -173,6 +182,13 @@ class $AssetsImagesGen {
 
   AssetGenImage get denemuch =>
       const AssetGenImage('assets/images/denemuch.png');
+
+  AssetGenImage get m => const AssetGenImage('assets/images/m.png');
+
+  AssetGenImage get janyldetail =>
+      const AssetGenImage('assets/images/janyldetail.png');
+
+  AssetGenImage get tabysh => const AssetGenImage('assets/images/tabysh.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [
