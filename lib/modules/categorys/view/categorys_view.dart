@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
+import 'package:tilbil/modules/categorys/widgets/categorycart.dart';
 import 'package:tilbil/modules/home/widgets/cartdetail.dart';
-import 'package:tilbil/modules/home/widgets/dot.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
-import 'package:tilbil/theme/custom/text/text.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({Key? key}) : super(key: key);
+class CategorysView extends StatelessWidget {
+  const CategorysView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -61,44 +60,21 @@ class HomeView extends StatelessWidget {
               ),
             ],
           ),
-          AppSpace.sized20,
-          Container(
-            width: 360,
-            height: 160,
-            decoration: BoxDecoration(
-              color: AppColors.white,
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(10),
-              child: Row(
-                children: [
-                  Expanded(child: Assets.images.baldar.image()),
-                  const Expanded(
-                    child: Text(
-                      AppText.homeAnimat,
-                      textAlign: TextAlign.center,
-                      style: AppTextStyles.homeAnimaStyle,
-                    ),
-                  )
-                ],
+          AppSpace.sized25,
+          Expanded(
+            child: Container(
+              decoration: const BoxDecoration(
+                color: AppColors.white,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(55),
+                  topLeft: Radius.circular(55),
+                ),
+              ),
+              child: Column(
+                children: [AppSpace.sized45, Categorycart()],
               ),
             ),
-          ),
-          AppSpace.sized5,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Dot(isCheck: true),
-              Dot(isCheck: false),
-              Dot(isCheck: false),
-              Dot(isCheck: false),
-              Dot(isCheck: false),
-              Dot(isCheck: false)
-            ],
-          ),
-          AppSpace.sized15,
-          const Cartdetail()
+          )
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

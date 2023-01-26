@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:tilbil/modules/authentication/view/go_name_view.dart';
+import 'package:tilbil/modules/authentication/view/go_one_view.dart';
 import 'package:tilbil/modules/authentication/view/go_regis_view.dart';
 import 'package:tilbil/modules/authentication/view/go_two_view.dart';
+import 'package:tilbil/modules/categorys/view/categorys_detail_view.dart';
+import 'package:tilbil/modules/categorys/view/categorys_view.dart';
+import 'package:tilbil/modules/fairy_tales/view/fairy_tales_view.dart';
 import 'package:tilbil/modules/home/view/home_view.dart';
+import 'package:tilbil/modules/settings/view/profil_view.dart';
+import 'package:tilbil/modules/settings/view/weabout_view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,16 +18,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tilbil',
       theme: ThemeData(backgroundColor: Colors.teal),
-      localizationsDelegates: const [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: const [
-        Locale('en', ''),
-        Locale('th', ''),
-      ],
-      home: const HomeView(),
+      // home: const HomeView(),
+      // home: const CategorysView(),
+      // home: const CategorysDetailView(),
+
+      home: const FairyTalesView(),
+
+      // home: const GoOneView(),
+      // home: const GoTwoView(),
+      // home: const GoRegisView(),
+      // home: const GoNameView(),
+      // home: const ProfilView(),
+      // home: const WeaboutView(),
     );
   }
 }
