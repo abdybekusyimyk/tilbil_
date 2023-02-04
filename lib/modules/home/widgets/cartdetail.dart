@@ -35,12 +35,12 @@ class Cartdetail extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Element(
-                text: 'Сабактар',
-                image: Assets.images.sabaktar.image(),
+                text: 'Манас',
+                image: Assets.images.makaldar.image(),
               ),
               Element(
                 text: 'Макалдар',
-                image: Assets.images.makaldar.image(),
+                image: Assets.images.sabaktar.image(),
               ),
               Element(
                 text: 'Табышмактар',

@@ -190,6 +190,22 @@ class $AssetsImagesGen {
 
   AssetGenImage get tabysh => const AssetGenImage('assets/images/tabysh.png');
 
+  AssetGenImage get yrlarbaldar =>
+      const AssetGenImage('assets/images/yrlarbaldar.png');
+
+  AssetGenImage get makaldarbaldar =>
+      const AssetGenImage('assets/images/makaldarbaldar.png');
+
+  AssetGenImage get yrlardetail =>
+      const AssetGenImage('assets/images/yrlardetail.png');
+
+  AssetGenImage get jomok => const AssetGenImage('assets/images/jomok.png');
+
+  AssetGenImage get makaldarditeil =>
+      const AssetGenImage('assets/images/makaldarditeil.png');
+
+  AssetGenImage get manas => const AssetGenImage('assets/images/manas.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
         akylduuBala,
