@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
-import 'package:tilbil/theme/custom/text/text.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 
-class FairyTalesView extends StatelessWidget {
-  const FairyTalesView({Key? key}) : super(key: key);
+class YrlarView extends StatelessWidget {
+  const YrlarView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +19,10 @@ class FairyTalesView extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 15, right: 330, bottom: 10),
                 child: Assets.icons.back.svg(fit: BoxFit.none),
               ),
-              Assets.images.jomok.image(),
+              Assets.images.yrlarbaldar.image(),
               AppSpace.sized20,
               const Text(
-                AppText.jomokto,
+                'Ырлар',
                 style: AppTextStyles.firetyles34Style,
               ),
               AppSpace.sized20,
