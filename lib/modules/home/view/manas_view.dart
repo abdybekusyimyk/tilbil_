@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
+import 'package:tilbil/modules/fairy_tales/view/fairy_tales_view.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
-import 'package:tilbil/theme/custom/text/text.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 
-class FairyTalesView extends StatelessWidget {
-  const FairyTalesView({Key? key}) : super(key: key);
+class ManasView extends StatelessWidget {
+  const ManasView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +20,10 @@ class FairyTalesView extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 15, right: 330, bottom: 10),
                 child: Assets.icons.back.svg(fit: BoxFit.none),
               ),
-              Assets.images.jomok.image(),
+              Assets.images.manas.image(),
               AppSpace.sized20,
               const Text(
-                AppText.jomokto,
+                'Манас',
                 style: AppTextStyles.firetyles34Style,
               ),
               AppSpace.sized20,
@@ -70,43 +70,3 @@ class FairyTalesView extends StatelessWidget {
     );
   }
 }
-
-class AppTextJomoktor {
-  AppTextJomoktor._init();
-  static const String jomoktor = 'Жомоктор';
-  static const String akylduubala = 'Акылдуу бала';
-  static const String altynkush = 'Алтын күш ';
-  static const String chypalakbala = 'Чыпалак бала';
-  static const String tulkuturna = 'Түлкү менен турна';
-  static const String bulbul = 'Булбул';
-  static const String myshykchychkan = 'Мышык менен чычкан';
-  static const String jyldyzdar = 'Жылдыздар эмнеге учушат';
-  static const String kalpaktahyxy = 'Калпак тарыхы';
-  static const String yrys = 'Ырыс алды ынтымак';
-  static const String topusun = 'Топусун жоготкон торгой';
-  static const String buguene = 'Бугу эне';
-  static const String komuz = 'Комуз';
-  static const String akylkarachach = 'Акыл карачач';
-  static const String abyshkadoo = 'Абышка менен дөө';
-  static const String akmenenkara = 'Ак көңүл менен кара көңүл';
-  static const String padyshnyn = 'Падышанын буйругу';
-}
-
-List<String> appTextJomoktor = [
-  AppTextJomoktor.akylduubala,
-  AppTextJomoktor.altynkush,
-  AppTextJomoktor.chypalakbala,
-  AppTextJomoktor.tulkuturna,
-  AppTextJomoktor.bulbul,
-  AppTextJomoktor.myshykchychkan,
-  AppTextJomoktor.jyldyzdar,
-  AppTextJomoktor.kalpaktahyxy,
-  AppTextJomoktor.yrys,
-  AppTextJomoktor.topusun,
-  AppTextJomoktor.buguene,
-  AppTextJomoktor.komuz,
-  AppTextJomoktor.akylkarachach,
-  AppTextJomoktor.abyshkadoo,
-  AppTextJomoktor.akmenenkara,
-  AppTextJomoktor.padyshnyn,
-];

@@ -1,11 +1,12 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
-import 'package:tilbil/theme/custom/text/text.dart';
 
-class FairryTalesDetailView extends StatelessWidget {
-  FairryTalesDetailView({Key? key}) : super(key: key);
+class YrlarDetailView extends StatelessWidget {
+  YrlarDetailView({Key? key}) : super(key: key);
 
   double currentSliderValue = 20;
   @override
@@ -18,7 +19,7 @@ class FairryTalesDetailView extends StatelessWidget {
             children: [
               Stack(
                 children: <Widget>[
-                  Assets.images.akylduuBala.image(
+                  Assets.images.yrlardetail.image(
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
@@ -42,22 +43,13 @@ class FairryTalesDetailView extends StatelessWidget {
                         child: Column(
                           children: [
                             const Text(
-                              AppText.akylduubala,
+                              'Жөжөлөрүм',
                               style: TextStyle(
                                 color: AppColors.blueblack,
                                 fontSize: 40,
                                 fontFamily: 'CormorantInfant',
                               ),
                             ),
-                            // AppSpace.sized10,
-                            // const Text(
-                            //   'Кыргыз эл жомогу',
-                            //   style: TextStyle(
-                            //     color: AppColors.blueblack,
-                            //     fontSize: 20,
-                            //     fontFamily: 'CormorantInfant',
-                            //   ),
-                            // ),
                             AppSpace.sized15,
                             Slider(
                               // divisions: 200,
@@ -101,14 +93,58 @@ class FairryTalesDetailView extends StatelessWidget {
                                 Assets.icons.forwardItalic.svg(),
                               ],
                             ),
-                            AppSpace.sized35,
-                            const Text(
-                              'Бир күнү акылман арабага түшүп келе жатты. Ал араба-сын токтото калып эңкейип караса, жолдо кичинекей бала шаар жасап, ойноп отуруптур. Акылман:‒ Балам, арабага жол бербейсиңби? ‒ деди. Бала акылмандын баш-аягына карап туруп: ‒ Чоң ата, мен шаар салып жатпаймынбы? Шаар араба-га жол бербейт. Араба шаарды айланып өтүшү керек го, ‒ деди. Акылман абдан таң калды. Арабадан түшүп келип:‒ Балам, жашыңа караганда акылың көп экен, ‒ деди. Анда бала:‒ Эмне үчүн андай дейсиз? Коёндун бөжөгү үч күндөнкийин жүгүрүп кетет. Жети жашка келгиче мен кантип бирнерсени билбейин, Z‒ дейт. Акылман жылмайып:‒ Мен сага бир нече суроо берейин. Жооп берсең, бирнерсе билериңе ишенейин, ‒ дейт.‒ Жооп берүүгө даярмын, ‒ дейт бала. Кандай сууда балык болбойт? Кандай тоодо таш болбойт? Кандай жыгачта бутак болбойт? Ушуларга жооп берчи, ‒ дейт акылман. Булактын суусунда балык болбойт. Кум дөбөдө таш болбойт. Чирик жыгачта бутак болбойт ‒ деп бала жооп берет. Бала да акылманга суроо берет:‒ Чоң ата, асманда канча жылдыз бар? ‒ дейт. ‒ Айланайын балам, бизден ыраак турган нерсени сураганың кандай? Бизге жакын турган нерседен сура. ‒ Андай болсо, сиздин кашыңызда нече тал кыл бар? ‒деп сурайт.Кичинекей баланын акылына акылман абдан таң калып: ‒ Балам, окууну көп оку. Акылың дагы арбыйт. Өмүрүң узун болсун! ‒ деп ак батасын берип, баланын шаарын айланып өтүптүр.',
-                              // textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  color: AppColors.blueblack,
-                                  fontSize: 15,
-                                  fontFamily: 'Gabriela'),
+                            // AppSpace.sized35,
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 40, bottom: 15, right: 160),
+                              child: Column(
+                                children: const [
+                                  Text('Obony E.Eralievanyky'),
+                                  Text('Obony E.Eralievanyky'),
+                                ],
+                              ),
+                            ),
+                            // AppSpace.sized15,
+                            ListView.builder(
+                              physics: const ScrollPhysics(),
+                              shrinkWrap: true,
+                              itemCount: 10,
+                              itemBuilder: (BuildContext context, index) {
+                                return ListTile(
+                                    title: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 15, horizontal: 10),
+                                  child: Column(
+                                    // mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: const [
+                                      Text(
+                                        'Күндүз жатып, түндө жүрөт,',
+                                        style: TextStyle(fontSize: 14),
+                                      ),
+                                      Text(
+                                        'Муну көргөн адам күлөт,',
+                                        style: TextStyle(fontSize: 14),
+                                      ),
+                                      Text(
+                                        'Айсыз караңгыда көзү көрөтч,',
+                                        style: TextStyle(fontSize: 14),
+                                      ),
+                                      Text(
+                                        'Муну көргөн адам күлөт?',
+                                        style: TextStyle(fontSize: 14),
+                                      ),
+                                    ],
+                                  ),
+                                ));
+                                // subtitle: const Center(
+                                //     child: Padding(
+                                //   padding:
+                                //       EdgeInsets.only(top: 5, left: 110),
+                                //   child: Text('(Кучук)'),
+                                // )));
+                              },
                             ),
                           ],
                         ),
