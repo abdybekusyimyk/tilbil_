@@ -1,17 +1,16 @@
 name: tilbil
 description: A new Flutter project.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.6 <3.0.0'
+  sdk: ">=2.18.5 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
 
   cupertino_icons: ^1.0.2
   bloc: ^8.1.0
@@ -25,21 +24,14 @@ dependencies:
   #build_runner:
   #flutter_gen_runner: ^5.1.0+1
   #flutter_gen: ^5.1.0+1
-  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
-
-
   flutter_lints: ^2.0.0
 
-
 flutter:
-
-  
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
@@ -48,21 +40,19 @@ flutter:
     - assets/icons/
     - assets/fonts/
 
- 
   # example:
   fonts:
     - family: CormorantInfant
       fonts:
         - asset: assets/fonts/CormorantInfant-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+          #       - asset: fonts/Schyler-Italic.ttf
+          #         style: italic
           weight: 700
     - family: Gabriela
       fonts:
         - asset: assets/fonts/Gabriela-Regular.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
+          #       - asset: fonts/TrajanPro_Bold.ttf
           weight: 400
-  
 
 flutter_icons:
   android: "launcher_icon"
@@ -70,13 +60,12 @@ flutter_icons:
   image_path: "assets/images/app_icon.png"
   # flutter pub run flutter_launcher_icons
 
-
 flutter_gen:
-  output: lib/constants/assets/  # Optional (default: lib/gen/)
-  line_length: 80   # Optional (default: 80)
+  output: lib/constants/assets/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
 
   integrations:
     flutter_svg: true
     # flare_flutter: true
     # rive: true
-    # lottie: true 
+    # lottie: true
