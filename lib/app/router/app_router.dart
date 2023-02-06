@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:tilbil/modules/Main/view/main_view.dart';
+import 'package:tilbil/modules/authentication/view/go_regis_view.dart';
 import 'package:tilbil/modules/home/view/home_view.dart';
 
 import '../../modules/categorys/view/categorys_detail_element_view.dart';
@@ -47,6 +49,16 @@ class AppRouter {
     RouteSettings settings,
   ) {
     switch (settings.name) {
+       case main:
+        return CupertinoPageRoute(
+          builder: (_) {
+            if ( main!= null) {
+              return const MainView();
+            } else {
+              return const GoRegisView();
+            }
+          },
+        );
       case home:
         return CupertinoPageRoute(
           builder: (_) => const HomeView(),

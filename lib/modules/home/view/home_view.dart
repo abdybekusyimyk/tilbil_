@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:tilbil/app/router/app_router.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/modules/home/widgets/cartdetail.dart';
@@ -100,76 +98,11 @@ class HomeView extends StatelessWidget {
             ],
           ),
           AppSpace.sized15,
-          const Cartdetail()
+          const Cartdetail(),
+    
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
-        currentIndex: 0,
-        onTap: ((value) async {
-          await Navigator.pushNamed(context, AppRouter.fairyTales);
-        }),
-        fixedColor: const Color(0xFF0E5EA3),
-        unselectedItemColor: const Color(0xFF0E5EA3),
-        items: [
-          BottomNavigationBarItem(
-            activeIcon: SvgPicture.asset(
-              "assets/icons/home.svg",
-              color: Colors.green,
-            ),
-            icon: SvgPicture.asset(
-              "assets/icons/home.svg",
-            ),
-            label: 'Үй',
-          ),
-          BottomNavigationBarItem(
-            activeIcon: SvgPicture.asset(
-              "assets/icons/category.svg",
-              color: const Color.fromARGB(255, 71, 192, 75),
-            ),
-            icon: SvgPicture.asset(
-              "assets/icons/category.svg",
-            ),
-            label: 'Категориялар',
-          ),
-          BottomNavigationBarItem(
-            activeIcon: SvgPicture.asset(
-              "assets/icons/faity_tailes.svg",
-              color: Colors.green,
-            ),
-            icon: SvgPicture.asset(
-              "assets/icons/faity_tailes.svg",
-            ),
-            label: 'Жомоктор',
-          ),
-          BottomNavigationBarItem(
-            activeIcon: SvgPicture.asset(
-              "assets/icons/profil.svg",
-              color: Colors.green,
-            ),
-            icon: SvgPicture.asset(
-              "assets/icons/profil.svg",
-            ),
-            label: 'Профиль',
-          ),
-        ],
-      ),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   unselectedItemColor: Colors.red,
-      //   // backgroundColor: Colors.red,
-      //   selectedItemColor: Colors.red,
-      //   // fixedColor: Colors.red,
-      //   currentIndex: 0,
-      //   iconSize: 20.0,
-      //   items: const [
-      //     BottomNavigationBarItem(
-      //         label: 'ddd', icon: Icon(Icons.accessibility)),
-      //     BottomNavigationBarItem(label: 'sss', icon: Icon(Icons.account_box)),
-      //     BottomNavigationBarItem(label: 'ttt', icon: Icon(Icons.adb)),
-      //     BottomNavigationBarItem(label: 'rrr', icon: Icon(Icons.menu))
-      //   ],
-      // ),
+    
     );
   }
 }
