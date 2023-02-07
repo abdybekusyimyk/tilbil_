@@ -55,6 +55,8 @@ import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/text/text.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 
+import '../../../app/router/app_router.dart';
+
 class ProfilView extends StatelessWidget {
   const ProfilView({Key? key}) : super(key: key);
 
@@ -72,13 +74,13 @@ class ProfilView extends StatelessWidget {
                 Settinglist(
                   icon: Assets.icons.aboutUs.svg(),
                   text: AppText.weabout,
-                  onTap: () {},
+                  onTap: () => Navigator.pushNamed(context, AppRouter.weAbout),
                 ),
                 AppSpace.sized35,
                 Settinglist(
                   icon: Assets.icons.share.svg(),
                   text: AppText.share,
-                  onTap: () {},
+                  onTap: () => Navigator.pushNamed(context, AppRouter.weAbout),
                 ),
               ],
             ),
