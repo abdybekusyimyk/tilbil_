@@ -1,8 +1,10 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/modules/home/widgets/cartdetail.dart';
 import 'package:tilbil/modules/home/widgets/dot.dart';
+import 'package:tilbil/modules/home/widgets/slide_carusel.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/text/text.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
@@ -62,41 +64,7 @@ class HomeView extends StatelessWidget {
             ],
           ),
           AppSpace.sized20,
-          Container(
-            width: 360,
-            height: 160,
-            decoration: BoxDecoration(
-              color: AppColors.white,
-              borderRadius: BorderRadius.circular(15),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(10),
-              child: Row(
-                children: [
-                  Expanded(child: Assets.images.baldar.image()),
-                  const Expanded(
-                    child: Text(
-                      AppText.homeAnimat,
-                      textAlign: TextAlign.center,
-                      style: AppTextStyles.homeAnimaStyle,
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
-          AppSpace.sized5,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Dot(isCheck: true),
-              Dot(isCheck: false),
-              Dot(isCheck: false),
-              Dot(isCheck: false),
-              Dot(isCheck: false),
-              Dot(isCheck: false)
-            ],
-          ),
+          const CarouselDemo(),
           AppSpace.sized15,
           const Cartdetail()
         ],
@@ -119,3 +87,4 @@ class HomeView extends StatelessWidget {
     );
   }
 }
+    //  

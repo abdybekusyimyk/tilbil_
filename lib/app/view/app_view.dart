@@ -20,6 +20,8 @@ import 'package:tilbil/modules/home/view/yrlar_view.dart';
 import 'package:tilbil/modules/settings/view/profil_view.dart';
 import 'package:tilbil/modules/settings/view/weabout_view.dart';
 
+import '../../modules/home/widgets/slide_carusel.dart';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
       title: 'Tilbil',
       theme: ThemeData(scaffoldBackgroundColor: Colors.teal),
 
-      home: const HomeView(),
+      home: HomeView(),
       // home: const JanylmachtarView(),
       // home: const TabyshmaktarView(),
       // home: const YrlarView(),
