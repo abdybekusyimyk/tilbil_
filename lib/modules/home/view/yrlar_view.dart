@@ -4,6 +4,8 @@ import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 
+import '../../../app/router/app_router.dart';
+
 class YrlarView extends StatelessWidget {
   const YrlarView({Key? key}) : super(key: key);
 
@@ -36,14 +38,8 @@ class YrlarView extends StatelessWidget {
                 itemBuilder: (BuildContext context, index) {
                   return ListTile(
                     title: GestureDetector(
-                      onDoubleTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const Ghj(),
-                        //   ),
-                        // );
-                      },
+                      onTap: () =>
+                          Navigator.pushNamed(context, AppRouter.yrlarDetail),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
