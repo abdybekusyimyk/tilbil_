@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>698335664514-e372skej5b87cbcu78ekdvu1fvq8n0qg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.698335664514-e372skej5b87cbcu78ekdvu1fvq8n0qg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDovpFwvOYyGDqBh8gGLiUMENsT8ojwJZs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>698335664514</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.tilbil</string>
+	<key>PROJECT_ID</key>
+	<string>tilbil-eff89</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tilbil-eff89.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:698335664514:ios:94a04660e2ff557fd3579b</string>
+</dict>
+</plist>

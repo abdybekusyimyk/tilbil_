@@ -81,7 +81,7 @@ class Element extends StatelessWidget {
       onTap: onTap,
       child: Container(
         width: 110,
-        height: 135,
+        height: 120, //135
         decoration: BoxDecoration(
           color: AppColors.white,
           borderRadius: BorderRadius.circular(8),

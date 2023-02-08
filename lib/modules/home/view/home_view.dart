@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/modules/home/widgets/cartdetail.dart';
-import 'package:tilbil/modules/home/widgets/dot.dart';
+// import 'package:tilbil/modules/home/widgets/dot.dart';
 import 'package:tilbil/modules/home/widgets/slide_carusel.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/text/text.dart';
@@ -65,7 +65,7 @@ class HomeView extends StatelessWidget {
           ),
           AppSpace.sized20,
           const CarouselDemo(),
-          AppSpace.sized15,
+          AppSpace.sized10,
           const Cartdetail()
         ],
       ),
@@ -87,4 +87,3 @@ class HomeView extends StatelessWidget {
     );
   }
 }
-    //  

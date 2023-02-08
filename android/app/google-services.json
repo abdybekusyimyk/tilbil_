@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "698335664514",
+    "project_id": "tilbil-eff89",
+    "storage_bucket": "tilbil-eff89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698335664514:android:77f589c6e10f5cdbd3579b",
+        "android_client_info": {
+          "package_name": "com.example.tilbil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698335664514-mc62umkgg2f5fh11cmit8kic8qupjutt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyR2YoelPRWuGrri9UPJ_anuu6fvLGBho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698335664514-mc62umkgg2f5fh11cmit8kic8qupjutt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
