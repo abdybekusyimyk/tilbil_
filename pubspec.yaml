@@ -23,6 +23,7 @@ dependencies:
   #intl: ^0.17.0
   # svg
   flutter_svg: ^1.1.6
+  share_plus: ^6.3.0
   #build_runner:
   #flutter_gen_runner: ^5.1.0+1
   #flutter_gen: ^5.1.0+1

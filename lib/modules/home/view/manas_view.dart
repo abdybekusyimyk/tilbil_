@@ -5,6 +5,8 @@ import 'package:tilbil/modules/fairy_tales/view/fairy_tales_view.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 
+import '../../../app/router/app_router.dart';
+
 class ManasView extends StatelessWidget {
   const ManasView({Key? key}) : super(key: key);
 
@@ -37,14 +39,8 @@ class ManasView extends StatelessWidget {
                 itemBuilder: (BuildContext context, index) {
                   return ListTile(
                     title: GestureDetector(
-                      onDoubleTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const Ghj(),
-                        //   ),
-                        // );
-                      },
+                      onTap: () =>
+                          Navigator.pushNamed(context, AppRouter.manasDetail),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(

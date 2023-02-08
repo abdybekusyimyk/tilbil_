@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tilbil/app/router/app_router.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
@@ -58,7 +59,8 @@ class GoRegisView extends StatelessWidget {
                         ),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () =>
+                            Navigator.pushNamed(context, AppRouter.goName),
                         style: ElevatedButton.styleFrom(
                           fixedSize: const Size(300, 50),
                         ),
