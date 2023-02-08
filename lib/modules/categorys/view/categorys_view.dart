@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/modules/categorys/widgets/categorycart.dart';
-import 'package:tilbil/modules/home/widgets/cartdetail.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 

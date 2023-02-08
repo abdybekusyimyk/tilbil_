@@ -20,40 +20,29 @@ import 'package:tilbil/modules/home/view/yrlar_view.dart';
 import 'package:tilbil/modules/settings/view/profil_view.dart';
 import 'package:tilbil/modules/settings/view/weabout_view.dart';
 
+
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      onGenerateRoute: (settings) => AppRouter.onGenerateRoute(
+        settings,
+      ),
       title: 'Tilbil',
       theme: ThemeData(scaffoldBackgroundColor: Colors.teal),
 
-      home: const HomeView(),
-      // home: const JanylmachtarView(),
-      // home: const TabyshmaktarView(),
-      // home: const YrlarView(),
-      // home: YrlarDetailView(),
-      // home: const MakaldarView(),
-      // home: const MakaldarDetailView(),
-      // home: const ManasView(),
-      // home: const ManasDetailView(),
 
       // home: const CategorysView(),
-      // home: const CategorysDetailView(),
-
-      // home: const CategorysDetailElementView(), ////// element suroty karash kerek
-
-      // home: const FairyTalesView(),
-      // home: FairryTalesDetailView(),
 
       // home: const GoOneView(),
       // home: const GoTwoView(),
       // home: const GoRegisView(),
       // home: const GoNameView(),
 
-      // home: const ProfilView(),
-      // home: const WeaboutView(),
+      home: const ProfilView(),
     );
   }
 }

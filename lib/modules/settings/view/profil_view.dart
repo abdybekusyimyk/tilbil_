@@ -48,6 +48,7 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/modules/settings/widgets/sittinglist.dart';
@@ -55,12 +56,15 @@ import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/text/text.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 
+import '../../../app/router/app_router.dart';
+
 class ProfilView extends StatelessWidget {
   const ProfilView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -69,16 +73,28 @@ class ProfilView extends StatelessWidget {
             Assets.images.oymoysty.image(),
             Column(
               children: [
-                Settinglist(
-                  icon: Assets.icons.aboutUs.svg(),
-                  text: AppText.weabout,
-                  onTap: () {},
+                TextButton(
+                  style: TextButton.styleFrom(foregroundColor: Colors.black),
+                  onPressed: () =>
+                      Navigator.pushNamed(context, AppRouter.weAbout),
+                  child: Settinglist(
+                    icon: Assets.icons.aboutUs.svg(),
+                    text: AppText.weabout,
+                    // onTap:
+                  ),
                 ),
                 AppSpace.sized35,
-                Settinglist(
-                  icon: Assets.icons.share.svg(),
-                  text: AppText.share,
-                  onTap: () {},
+                TextButton(
+                  style: TextButton.styleFrom(foregroundColor: Colors.black),
+                  onPressed: () async {
+                    final urlLink =
+                        'https://www.figma.com/file/Zcp5VnLggW2zRCzV02CKxY/Tilbil-app-design?node-id=0%3A1&t=ADq8dA411GtuGYQN-0';
+                    await Share.share('${urlLink}');
+                  },
+                  child: Settinglist(
+                    icon: Assets.icons.share.svg(),
+                    text: AppText.share,
+                  ),
                 ),
               ],
             ),
