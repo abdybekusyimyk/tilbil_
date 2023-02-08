@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:tilbil/app/router/app_router.dart';
 import 'package:tilbil/constants/assets/assets_gen.dart';
 import 'package:tilbil/constants/spaces/space.dart';
 import 'package:tilbil/modules/fairy_tales/view/fairy_tales_view.dart';
 import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
-
-import '../../../app/router/app_router.dart';
 
 class ManasView extends StatelessWidget {
   const ManasView({Key? key}) : super(key: key);
