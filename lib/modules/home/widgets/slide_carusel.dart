@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-
-import '../../../constants/assets/assets_gen.dart';
-import '../../../theme/custom/color/custom_color.dart';
-import '../../../theme/custom/text/text.dart';
-import '../../../theme/custom/typography/typography.dart';
+import 'package:tilbil/constants/assets/assets_gen.dart';
+import 'package:tilbil/constants/spaces/space.dart';
+import 'package:tilbil/theme/custom/color/custom_color.dart';
+import 'package:tilbil/theme/custom/text/text.dart';
+import 'package:tilbil/theme/custom/typography/typography.dart';
 
 class CarouselDemo extends StatefulWidget {
-  const CarouselDemo() : super();
+  const CarouselDemo({super.key});
 
   @override
   CarouselDemoState createState() => CarouselDemoState();
@@ -49,16 +49,18 @@ class CarouselDemoState extends State<CarouselDemo> {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(10),
-                    child: Row(children: [
-                      Expanded(child: Assets.images.baldar.image()),
-                      const Expanded(
-                        child: Text(
-                          AppText.homeAnimat,
-                          textAlign: TextAlign.center,
-                          style: AppTextStyles.homeAnimaStyle,
+                    child: Row(
+                      children: [
+                        Expanded(child: Assets.images.baldar.image()),
+                        const Expanded(
+                          child: Text(
+                            AppText.homeAnimat,
+                            textAlign: TextAlign.center,
+                            style: AppTextStyles.homeAnimaStyle,
+                          ),
                         ),
-                      ),
-                    ]),
+                      ],
+                    ),
                   ),
                 );
               },
@@ -79,22 +81,23 @@ class CarouselDemoState extends State<CarouselDemo> {
             },
           ),
         ),
-        const SizedBox(
-          height: 20,
-        ),
+        AppSpace.sized5,
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: map<Widget>(imgList, (index, url) {
-            return Container(
-              width: 6,
-              height: 6,
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 2),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: current == index ? Colors.green : Colors.grey,
-              ),
-            );
-          }),
+          children: map<Widget>(
+            imgList,
+            (index, url) {
+              return Container(
+                width: 6,
+                height: 6,
+                margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 6),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: current == index ? Colors.green : Colors.grey,
+                ),
+              );
+            },
+          ),
         ),
       ],
     );
