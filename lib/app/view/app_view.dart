@@ -31,12 +31,12 @@ class MyApp extends StatelessWidget {
       title: 'Tilbil',
       theme: ThemeData(scaffoldBackgroundColor: Colors.teal),
 
-      // home: const GoOneView(),
+      home: const GoOneView(),
       // home: const GoTwoView(),
       // home: const GoRegisView(),
       // home: const GoNameView(),
 
-      home: const HomeView(),
+      // home: const HomeView(),
       // home: const CategorysView(),
       // home: const CategorysDetailView(),
       // home: const FairyTalesView(),
