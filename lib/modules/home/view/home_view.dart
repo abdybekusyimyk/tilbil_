@@ -9,6 +9,8 @@ import 'package:tilbil/theme/custom/color/custom_color.dart';
 import 'package:tilbil/theme/custom/text/text.dart';
 import 'package:tilbil/theme/custom/typography/typography.dart';
 
+import '../../main/view/main_view.dart';
+
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
 
@@ -66,22 +68,7 @@ class HomeView extends StatelessWidget {
           AppSpace.sized20,
           const CarouselDemo(),
           AppSpace.sized10,
-          const Cartdetail()
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        unselectedItemColor: Colors.red,
-        // backgroundColor: Colors.red,
-        selectedItemColor: Colors.red,
-        // fixedColor: Colors.red,
-        currentIndex: 0,
-        iconSize: 20.0,
-        items: const [
-          BottomNavigationBarItem(
-              label: 'ddd', icon: Icon(Icons.accessibility)),
-          BottomNavigationBarItem(label: 'sss', icon: Icon(Icons.account_box)),
-          BottomNavigationBarItem(label: 'ttt', icon: Icon(Icons.adb)),
-          BottomNavigationBarItem(label: 'rrr', icon: Icon(Icons.menu))
+          const Cartdetail(),
         ],
       ),
     );

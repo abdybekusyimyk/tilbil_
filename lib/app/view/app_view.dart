@@ -18,6 +18,7 @@ import 'package:tilbil/modules/home/view/manas_view.dart';
 import 'package:tilbil/modules/home/view/tabyshmaktar_view.dart';
 import 'package:tilbil/modules/home/view/yrlar_detail_view.dart';
 import 'package:tilbil/modules/home/view/yrlar_view.dart';
+import 'package:tilbil/modules/main/view/main_view.dart';
 import 'package:tilbil/modules/settings/view/profil_view.dart';
 import 'package:tilbil/modules/settings/view/weabout_view.dart';
 
@@ -31,12 +32,14 @@ class MyApp extends StatelessWidget {
       title: 'Tilbil',
       theme: ThemeData(scaffoldBackgroundColor: Colors.teal),
 
-      // home: const GoOneView(),
+      // home: const MainView(),
+      home: const GoOneView(),
       // home: const GoTwoView(),
+
       // home: const GoRegisView(),
       // home: const GoNameView(),
 
-      home: const HomeView(),
+      // home: const HomeView(),
       // home: const CategorysView(),
       // home: const CategorysDetailView(),
       // home: const FairyTalesView(),
