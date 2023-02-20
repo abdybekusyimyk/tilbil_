@@ -19,7 +19,7 @@ class _GoNameViewState extends State<GoNameView> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 3))
-        .then((value) => Navigator.pushNamed(context, AppRouter.home));
+        .then((value) => Navigator.pushNamed(context, AppRouter.main));
   }
 
   @override
