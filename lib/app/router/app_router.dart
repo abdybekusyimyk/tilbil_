@@ -4,6 +4,7 @@ import 'package:tilbil/modules/authentication/view/go_one_view.dart';
 import 'package:tilbil/modules/authentication/view/go_regis_view.dart';
 import 'package:tilbil/modules/authentication/view/go_two_view.dart';
 import 'package:tilbil/modules/home/view/home_view.dart';
+import 'package:tilbil/modules/main/view/main_view.dart';
 
 import '../../modules/categorys/view/categorys_detail_element_view.dart';
 import '../../modules/categorys/view/categorys_detail_view.dart';
@@ -24,7 +25,7 @@ import '../../modules/settings/view/weabout_view.dart';
 class AppRouter {
   const AppRouter();
 
-  static const String main = '/';
+  static const String main = '/main';
   static const String home = '/home';
   static const String janylmachtar = '/janylmachtar';
   static const String makaldar = '/makaldar';
@@ -55,6 +56,11 @@ class AppRouter {
     RouteSettings settings,
   ) {
     switch (settings.name) {
+      case main:
+        return CupertinoPageRoute(
+          builder: (_) => const MainView(),
+          settings: settings,
+        );
       case goOne:
         return CupertinoPageRoute(
           builder: (_) => const GoOneView(),

@@ -41,21 +41,6 @@ class CategorysDetailView extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        unselectedItemColor: Colors.red,
-        // backgroundColor: Colors.red,
-        selectedItemColor: Colors.red,
-        // fixedColor: Colors.red,
-        currentIndex: 0,
-        iconSize: 20.0,
-        items: const [
-          BottomNavigationBarItem(
-              label: 'ddd', icon: Icon(Icons.accessibility)),
-          BottomNavigationBarItem(label: 'sss', icon: Icon(Icons.account_box)),
-          BottomNavigationBarItem(label: 'ttt', icon: Icon(Icons.adb)),
-          BottomNavigationBarItem(label: 'rrr', icon: Icon(Icons.menu))
-        ],
-      ),
     );
   }
 }
